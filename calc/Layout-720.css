@@ -1,0 +1,204 @@
+@media all and (min-height:1000px){
+    section.home { min-height:100vh; background-size:cover; margin-bottom:0;}
+    section.full-height { min-height:100vh; background-size:cover;}
+    section.home .scroll-down-arrow { display:block;}    
+    .flex-column-100 {display:flex !important; flex-direction:column; justify-content:center; height:100%;}
+}
+@media all and (max-width:500px){
+    h1, .h1 { font-size:30pt; word-break:break-word; }
+    .SliderContainer input[type="text"], .SliderContainer input[type="number"] { font-size:4vw !important;}
+    .RoomContainer .Question input[type="text"],.RoomContainer .Question input[type="number"] { font-size:4vw !important;}
+    .testimonials .testimonial .review-star { width:26px; height:26px;}
+    .testimonials .testimonial .reviewer-info h3 { font-size:4vw; line-height:4vw}
+    .testimonials .testimonial .image { width:50px; height:50px; }
+}
+@media all and (min-width:900px){
+
+    /* ----------- CORE LAYOUT ELEMENTS---------------*/
+    .button { font-size:18pt !important;}
+
+
+    /*make min width: 1040px, center Page*/
+    /* body{min-width:1000px;} */
+    .Page {max-width:1600px; margin: 0 auto;padding:0px 25px; position:relative;  }
+    .TotalCost-Container-Fixed .Page { max-width:1200px !important ; margin: 0 auto !important; }
+    
+    .BodyRow .Page, section .Page {padding:80px 25px}
+    .header .Page,  .header .Page{ padding:0px 25px;}
+    
+    .BodyContainer .SubMenu a{  font-size:17px !important;}
+    
+    .footer .Column { width:28%; float:left; margin-right:4.1666666%; display:block;}
+    .footer p { text-align:left; }
+    .footer .Links, .footer .Legal { width:50%; margin:20px 0px 0px 0px; float:left;}
+    .footer .Legal { float:right; text-align:right; margin-top:20px;}
+    .footer img.LaPasserelle { width:60%; }
+    .footer img.FedDev { width:67%;  }
+
+
+    
+    
+    /*.testimonials { margin-top:60px;}*/
+    .testimonials .testimonial h1 { line-height:22pt; }
+    .testimonials .testimonial .Text { margin-top:20px; }
+    .testimonials .testimonial .Image { width:100px; height:100px; }
+    .testimonials .testimonial .review-star { margin-top:15px;}
+    .testimonials .testimonial p { display:inline-block; margin-left:95px;}
+    .testimonials .testimonial .reviewer-info h3 { font-size:15pt; line-height:15pt;} 
+
+    /*make columns go side by side*/
+    .Column, .Column_2Wide { width:30.5208333%; float:left; margin-right:4.1666666%;} /*width = 293px*/
+    .Column:last-child, .Column_2Wide:last-child{ margin-right:0px;}
+    .Column_2Wide {width: 65.2083326%;}
+    /*.Column_2Wide .Column { width:46.8051118%; margin-right:4.1666666%;}
+    .Column_2Wide .Column:last-child{ margin-right:0px;}*/
+    
+    
+    .Row_2Column .Column {width: 48.7%; margin-right:2.5%; }
+    .Row_2Column .Column:last-child {margin-right:0px; }
+    .Row_3Column .Column {width: 30%; margin-right:5%; }
+    .Row_3Column .Column:last-child {margin-right:0px; }
+    .Row_4Column .Column {width: 23.1%; margin-right:2.5%; }
+    .Row_4Column .Column:last-child {margin-right:0px; }
+    .Row_5Column .Column {width: 18%; margin-right:2.5%; }
+    .Row_5Column .Column:last-child {margin-right:0px; }
+
+    /*right-align BBT buttons*/
+    .BackToTop {text-align:right;}
+    
+    section.home {padding:0 0 40px 0;  /*min-height:100vh;*/ background-size:cover; background-position:left top; }
+    .Background_Home {padding:0 0 40px 0; }
+    .Background_Alt { overflow: hidden;}
+    .Background_404 { flex:1 1 auto; }
+
+    .Background_Price .TermsLinkRow { text-align:right; }
+    .Background_Price .CalloutButton_Orange {float:right; width:auto;}
+
+
+    .Gallery >div { width:25%;}
+
+    /*.CalloutButton {float:right;}*/
+
+    .Banner .Page h1 { padding:0 10%; }
+    /* .Background_Price .Row {display:flex; flex-direction:row;}
+    .Background_Price .Row >* { flex:1} */
+    .Background_Price .CalculatorFooter .EstimatedTotalContainer h2 { font-size:19pt; line-height:24pt; margin:0 !important;}
+    .Background_Price .CalculatorFooter .EstimatedTotalContainer .Column, .Background_Price .EstimatedTotalContainer  .Column_2Wide { width:30.5208333%; margin-right:4.1666666%;} /*width = 293px*/
+    .Background_Price .CalculatorFooter .EstimatedTotalContainer .Column_2Wide {width: 65.2083326%;}
+    
+    /* ----------- FORM ELEMENTS ---------------*/     
+    
+    /*put form field labels beside the field and give more padding between each field row */
+    .Form .Row {margin-bottom:10px; }
+    .Form .Row >.Label h4 { margin:0px !important;  font-size:12pt;}
+    .Form .Row > .Label {float:left; width:20%; padding-right:5%; }
+    .Form .Row > .Field {float:left; width:75%; }
+    .Form hr { margin:25px 0;}
+
+    /*make buttons only as big as they need to be*/
+    .Button, .Button_Grey, .Button_DarkGrey, .Button_White  { width:auto;}
+    
+    /* ----------- RWD CONTROLLER STYLES ---------------*/
+    .FullViewOnly { display:block !important; }
+    .MobileViewOnly {display:none; }
+    
+    /* turn text buttons into graphical buttons*/
+    .TextToButton { width:auto; float:right !important; text-align:left; border:none; padding:0px; border-radius:0px; margin:0px; }
+    .TextToButton span, .TextToButton img, .TextToButton div { display:block;}
+    
+    .FullViewOnly_MarginLeft_20{margin-left:20px !important;}
+    .FullViewOnly_MarginLeft_40{margin-left:40px !important;}
+    .FullViewOnly_MarginTop_20{margin-top:20px !important;}
+    .FullViewOnly_MarginTop_40{margin-top:40px !important;}
+    .FullViewOnly_MarginRight_20{margin-right:20px !important;}
+    .FullViewOnly_MarginRight_40{margin-right:40px !important;}
+    .FullViewOnly_MarginBottom_20{margin-bottom:20px !important;}
+    .FullViewOnly_MarginBottom_40{margin-bottom:40px !important;}
+    
+    .MobileViewOnly_MarginLeft_20{margin-left:0px !important;}
+    .MobileViewOnly_MarginLeft_40{margin-left:0px !important; }
+    .MobileViewOnly_MarginTop_20{margin-top:0px !important; }
+    .MobileViewOnly_MarginTop_40{margin-top:0px !important; }
+    .MobileViewOnly_MarginRight_20{margin-right:0px !important; }
+    .MobileViewOnly_MarginRight_40{margin-right:0px !important; }
+    .MobileViewOnly_MarginBottom_20{margin-bottom:0px !important;}
+    .MobileViewOnly_MarginBottom_40{margin-bottom:0px !important}
+
+    /* ----------- SPECIFIC STYLES ---------------*/
+    .Progressbar-Container-Spacer { display:block; position:relative;}
+    .Progressbar-Container { padding:15px 0px; /*transition:none;*/}
+    .Progressbar-Container .Page { padding:0;}
+    .Progressbar-Container-Fixed .Page {padding-left:25px !important; padding-right:25px !important;}
+    /* .Progressbar-Container-Fixed .Progressbar { max-width:960px; min-width:1200px; margin:0 auto; } */
+    .Progressbar { height:50px;}
+    .Progressbar .Label { font-size:18pt;padding-top:10px;}
+
+    .TotalCost-Container-Spacer { display:block; position:relative;}
+    .TotalCost-Container { padding:0px; transition:none;}
+    .TotalCost-Container .Page { 
+         min-width:0; max-width:none; padding:0 !important; position:relative; 
+    }
+    
+    .TotalCost-Container-Fixed{ padding-left:0; padding-right:0 !important;  /*padding-bottom:15px !important;*/}
+    .TotalCost-Container-Fixed .Page {padding-left:25px !important; padding-right:25px !important;}
+    /* .Progressbar-Container-Fixed .Progressbar { max-width:960px; min-width:1200px; margin:0 auto; } */
+    
+    .CheckboxContainer .Checkbox, .CheckboxContainer .Radio { width:30px; height:30px;}    
+    .CheckboxContainer h4 { padding-right:0px;} 
+    .CheckboxContainer .Icon_Info { position:relative; right:0; top:4px;} 
+    
+    .Background_Price hr.thick { margin:80px 0 !important; }
+
+    .ButtonPod { padding:0 2px 3px 0; flex-direction:row;  }
+    .ButtonPod .Option { border-left:1px solid #2e687b; text-align:center; width:25%; margin:0 1px -3px -3px;}
+    .ButtonPod .Option:first-child { margin-left:0px;}
+    .ButtonPod .Option:last-child { border-right:none; margin-right:-2px;}
+    .ButtonPod .Option >div { padding:20px; }
+    .ButtonPod .Option >div .Icon { margin:0 0 5px 0; float:none; width:80px; height:80px;  }
+    .ButtonPod .Option >div .Text { margin:0; text-align:center; display:block; }
+
+    /* Gallery */
+    .portfolio a { margin-bottom:15px; height:14vh; min-height:300px; }
+    .portfolio .column { flex: 25%; max-width: 25%; }
+    .portfolio .column div.placeholder { display:block; }
+
+        
+}
+/*@media all and (min-width:1200px) {section.home {height:630px; } }*/
+/*@media all and (min-width:2000px) {section.home {height:830px; } }*/
+
+@media all and (min-width:1100px){
+    
+    h1, .h1 { font-size:3.5vw; }
+    h2, .h2 { font-size:2.5vw; line-height:normal; }
+    p, .p, li { font-size:2vw; line-height:normal;}
+    section.home .content h1, .Background_Home .content h1 { font-size:5vw;}
+    section.home .content h2, .Background_Home .content h2 { font-size:5vw;}
+
+    /*hide mobile nav, show normal nav*/
+    .header .logo { width:auto; height:auto; float:left; max-width:500px;  margin-left:-140px;}
+    .header .Page .menu { display:block;}
+    .header .Page nav.mobile {display:none;}
+    .header >.Page >div { display:table; width:100%;}
+    .header >.Page >div >a {  position:absolute;}
+    .header .menu { display:block; margin-top:90px; float:right;}
+
+}
+
+@media all and (min-width:1750px){
+    
+    p, .p, li { font-size:22pt;}
+    h1, .h1 { font-size:60pt; }
+    h2, .h2 { font-size:30pt; }
+    section.home .content h1, .Background_Home .content h1 { font-size:100pt;}
+    section.home .content h2, .Background_Home .content h2 { font-size:60pt;}
+
+    .footer { padding-top:4%;}
+
+}
+
+@media all and (min-width:2200px){    
+    section.home .content h1, .Background_Home .content h1 { font-size:100pt; font-weight:600;  text-transform:uppercase;}
+
+
+}

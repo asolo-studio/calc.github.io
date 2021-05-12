@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <title>Paint Quote</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="color-scheme" content="light">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+<!--     <link href="calc/css2" rel="stylesheet">
+    <link href="calc/css2(1)" rel="stylesheet"> -->
+    <link type="text/css" rel="stylesheet" href="calc/Layout.css">
+    <link type="text/css" rel="stylesheet" href="calc/Layout-720.css">
+    <link type="text/css" rel="stylesheet" href="calc/jquery-ui-1.12.1.css">
+    
+    <script type="text/javascript" async="" src="calc/tracking.js"></script>
+    <script async="" src="calc/analytics.js"></script>
+    <script async="" src="calc/gtm.js"></script><script type="text/javascript" src="calc/jquery.js"></script>
+    <!--<script type="text/javascript" src="scripts/modernizr.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/jquery-migrate-1.4.1.min.js"></script>-->
+    <script type="text/javascript" src="calc/jquery-ui-1.12.1.js"></script>
+    <script type="text/javascript" src="calc/Variables.min.js"></script>
+    <script type="text/javascript" src="calc/Core.min.js"></script>
+    <script type="text/javascript" src="calc/Calculator.min.js"></script>
+</head>
+
+<body>
+</div>    
+    <div class="BodyContainer">
+        <div class="Background_Price Background_1">
+            <div class="BodyRow" id="pricebackground">
+                <div class="Page">
+                    
+                    <div class="Progressbar-Container-Spacer" style="display: none; height: 50px;">
+                        <div class="Progressbar-Container ">
+                            <div class="Page">
+                                <div class="Progressbar">
+                                    <p class="Label">0%</p>
+                                    <div class="Fill" style="width:0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                          
+
+                    <div id="QuestionContainer">
+                        <!-- Question1 -->                
+                        <div data-type="Question" class="Question">
+                            <h2 class="MarginBottom_0">1. How much of your condo needs painting?</h2>
+                            <hr class="hr_1px">
+                            <div class="ResponseContainer">
+                                <div class="Row_Column">
+                                    <div id="btnMode" name="btnMode" class="ButtonPod" data-selected-index="-1" data-selected-text="" data-selected-value="" tabindex="0"> 
+                                        <div class="Option" id="btnMode_WholeCondo" name="btnMode_WholeCondo" role="radio" aria-checked="false" title="Whole Condo" data-text="Whole Condo" data-value="0.00" data-index="0" tabindex="0">
+                                            <div>
+                                                <img class="Icon" src="calc/Icon_WholeCondo_160.png">
+                                                <p class="Text">Whole Condo</p>
+                                            </div>
+                                        </div>
+                                        <div class="Option" id="btnMode_Rooms" name="btnMode_Rooms" role="radio" aria-checked="false" title="Specific Rooms" data-text="Specific Rooms" data-value="0.00" data-index="1" tabindex="0">
+                                            <div>    
+                                                <img class="Icon" src="calc/Icon_SpecificRooms_160.png">
+                                                <p class="Text">Specific Room(s)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- WHOLE CONDO QUESTIONS -->
+                        <div data-mode-visibility="whole-condo" class="Hide">
+                            <div data-type="Question" class="Question Hide" id="pnlHowLargeIsYourCondo">
+                                <h2 class="MarginBottom_0">2. How large is your condo?</h2>
+                                <hr class="hr_1px"> 
+                                <div class="ResponseContainer">
+                                    <div id="btnSize" name="btnSize" class="ButtonPod MarginBottom_5" data-selected-index="-1" data-selected-text="" data-selected-value="" tabindex="0">
+                                        <div class="Option" id="btnSize_Bachelor" name="btnSize_Bachelor" role="radio" aria-checked="false" title="Bachelor" data-square-footage="500" data-text="Bachelor" data-value="0.00" data-index="0" tabindex="0">
+                                            <div>
+                                                <img class="Icon" src="calc/Icon_BedSmall_160.png">
+                                                <p class="Text">Bachelor</p>
+                                            </div>
+                                        </div>
+                                        <div class="Option" id="btnSize_1Bedroom" name="btnSize_1Bedroom" role="radio" aria-checked="false" title="1 Bedroom" data-square-footage="750" data-text="1 Bedroom" data-value="0.00" data-index="1" tabindex="0">
+                                            <div>    
+                                                <img class="Icon" src="calc/Icon_BedLarge_160.png">
+                                                <p class="Text">1 Bedroom</p>
+                                            </div>
+                                        </div>
+                                        <div class="Option" id="btnSize_2Bedroom" name="btnSize_2Bedroom" role="radio" aria-checked="false" title="2 Bedroom" data-square-footage="1000" data-text="2 Bedroom" data-value="0.00" data-index="2" tabindex="0">
+                                            <div>    
+                                                <img class="Icon" src="calc/Icon_2Bedroom_160.png">
+                                                <p class="Text">2 Bedroom</p>
+                                            </div>
+                                        </div>
+                                        <div class="Option" id="btnSize_3Bedroom" name="btnSize_3Bedroom" role="radio" aria-checked="false" title="3 Bedroom" data-square-footage="1250" data-text="3 Bedroom" data-value="0.00" data-index="3" tabindex="0">
+                                            <div>    
+                                                <img class="Icon" src="calc/Icon_3Bedroom_160.png">
+                                                <p class="Text">3 Bedroom</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sldSize_WholeCondo" name="sldSize_WholeCondo" class="SliderContainer MarginTop_5 MarginBottom_5" data-value="0" disabled="disabled" style="opacity: 0.4;">
+                                        <div class="flex-row">
+                                            <div class="flex-column PaddingRight_5 Width_100">
+                                                <input id="sldSquareFootage" type="range" min="400" max="3500" step="5" value="0" disabled="disabled">
+                                            </div>
+                                            <div class="flex-column PaddingRight_5 PaddingLeft_5">
+                                                <input type="number" min="0" max="1500" step="5" disabled="disabled">
+                                            </div>
+                                            <p class="Margin_0">APPROX<br>SQ FT.</p>
+                                        </div>
+                                    </div>                        
+                                    <h3 class="NoteLabel" style="margin:0 !important">Please ensure the square footage specified above is accurrate for a more accurate price.</h3>
+                                </div>
+                            </div>
+
+                            <div data-type="Question" class="Question Hide" id="pnlWhatWouldYouLikeUsToDo">
+                                <h2 class="MarginBottom_0">3. What kind of paint job do you need?</h2>
+                                <hr class="hr_1px">
+                                <div class="ResponseContainer">
+                                    <h3 class="NoteLabel">Includes painting all walls throughout the condo, minus the bathroom and closets</h3>
+                                    <div class="Row_Column">
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox Radio" id="rdoRefresh" role="radio" aria-checked="false" tabindex="0" title="Refresh Existing Colours"><input id="chkRefresh_Value" name="chkRefresh_Value" type="hidden" value="false"></span>
+                                                <h4>Refresh Existing Colours <span class="Icon_Info tooltip tooltipstered"></span><br><span id="lblRefresh_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column_2Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox Radio" id="rdoColourChange" role="radio" aria-checked="false" tabindex="0" title="Colour Change"><input id="chkColourChange_Value" name="chkColourChange_Value" type="hidden" value="false"></span>
+                                                <h4>Colour Change <span class="Icon_Info tooltip tooltipstered"></span><br><span id="lblColourChange_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div data-type="Question" class="Question Hide" id="pnlColours">
+                                <h2 class="MarginBottom_0"><span class="h2">4. </span>Do you want help picking colours?</h2>
+                                <hr class="hr_1px">
+                                <div class="ResponseContainer">
+                                    <div class="Row">
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox Radio" id="rdoColourConsultation_Yes" role="radio" aria-checked="false" tabindex="0" title="Colour Consultation"><input id="rdoColourConsultation_Yes_Value" name="rdoColourConsultation_Yes_Value" type="hidden" value="false"></span>
+                                                <h4>Yes, I would like a professional colour consultation<span class="Icon_Info tooltip tooltipstered"></span><br><span id="lblColourConsultation_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column_2Wide">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox Radio" id="rdoColourConsultation_No" role="radio" aria-checked="false" tabindex="0" title="No Colour Consultation Needed"><input id="rdoColourConsultation_No_Value" name="rdoColourConsultation_No_Value" type="hidden" value="false"></span>
+                                                <h4>No, I will choose colours <span class="Icon_Info tooltip tooltipstered"></span><br><span class="Price">$0.00</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <h4>NOTE: Colours will be selected during a colour consultation once your order has been confirmed.</h4> -->
+                                </div>
+                            </div>
+                            
+                            <div data-type="Question" class="Question Hide" id="pnlRushJob">
+                                <h2 class="MarginBottom_0">5. Do you need it painted on a specific date?</h2>
+                                <hr class="hr_1px">
+                                <div class="ResponseContainer">
+                                    <div class="Row">
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox Radio" id="rdoRushJob_No" role="radio" aria-checked="false" tabindex="0" title="Flexible Schedule Discount"><input id="rdoRushJob_No_Value" name="rdoRushJob_No_Value" type="hidden" value="false"></span>
+                                                <h4>No, I'm flexible<span class="Icon_Info tooltip tooltipstered"></span><br><span id="lblRushJob_No_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column_2Wide">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox Radio" id="rdoRushJob_Yes" role="radio" aria-checked="false" tabindex="0" title="Specific Schedule Required"><input id="rdoRushJob_Yes_Value" name="rdoRushJob_Yes_Value" type="hidden" value="false"></span>
+                                                <h4>Yes, I need it painted on/by a specific date<span class="Icon_Info tooltip tooltipstered"></span><br><span class="Price">$0.00</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div data-type="Question" class="Question Hide" id="pnlSanitization">
+                                <h2 class="MarginBottom_0">6. Would you like your condo sanitized?</h2>
+                                <hr class="hr_1px">
+                                <div class="ResponseContainer">
+                                    <div class="Row">
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">                                            
+                                                <span class="Checkbox Radio" id="rdoSanitization_Yes" role="radio" aria-checked="false" tabindex="0" title="Condo Sanitization"><input id="rdoSanitization_Yes_Value" name="rdoSanitization_Yes_Value" type="hidden" value="false"></span>
+                                                <h4>Yes, I would like my condo sanitized<span class="Icon_Info tooltip tooltipstered"></span><br><span id="lblSanitization_Yes_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column_2Wide">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox Radio" id="rdoSanitization_No" role="radio" aria-checked="false" tabindex="0" title="Condo Sanitization"><input id="rdoSanitization_No_Value" name="rdoSanitization_No_Value" type="hidden" value="false"></span>
+                                                <h4>No<br><span class="Price">$0.00</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-type="Question" class="Question Hide" data-optional="true" id="pnlWhatNeedsPainting">
+                                <h2 class="MarginBottom_0">7. What else would you like us to paint?</h2>
+                                <hr class="hr_1px">
+                                <div class="ResponseContainer">
+                                    <h3 class="NoteLabel">Select all that apply</h3>
+                                    <div class="Row_4Column">
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox" id="chkBaseboards" role="checkbox" aria-checked="false" tabindex="0" title="Baseboards"><input id="chkBaseboards_Value" name="chkBaseboards_Value" type="hidden" value="false"></span>
+                                                <h4>Baseboards<br><span id="lblBaseboards_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox" id="chkDoorsTrim" role="checkbox" aria-checked="false" tabindex="0" title="Doors &amp; Frames"><input id="chkDoorsTrim_Value" name="chkDoorsTrim_Value" type="hidden" value="false"></span>
+                                                <h4>Doors &amp; Frames <span class="Icon_Info tooltip tooltipstered"></span><br><span id="lblDoorsTrim_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox" id="chkCeiling" role="checkbox" aria-checked="false" tabindex="0" title="Ceiling"><input id="chkCeiling_Value" name="chkCeiling_Value" type="hidden" value="false"></span>
+                                                <h4>Ceiling<br><span id="lblCeiling_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox" id="chk10FootCeiling" role="checkbox" aria-checked="false" tabindex="0" title="10&#39;+ High Walls/Ceilings"><input id="chk10FootCeiling_Value" name="chk10FootCeiling_Value" type="hidden" value="false"></span>
+                                                <h4>10'+ High Walls/Ceilings <span class="Icon_Info tooltip tooltipstered"></span><br><span id="lbl10FootCeiling_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Row_4Column FullViewOnly_MarginTop_10">
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox" id="chkCrownMolding" role="checkbox" aria-checked="false" tabindex="0" title="Crown Molding"><input id="chkCrownMolding_Value" name="chkCrownMolding_Value" type="hidden" value="false"></span>
+                                                <h4>Crown Molding<br><span id="lblCrownMolding_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox" id="chkAccentWall" role="checkbox" aria-checked="false" tabindex="0" title="Accent Wall(s)"><input id="chkAccentWall_Value" name="chkAccentWall_Value" type="hidden" value="false"></span>
+                                                <h4>Accent Wall(s)<br><span id="lblAccentWall_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox" id="chkDen" role="checkbox" aria-checked="false" tabindex="0" title="Den"><input id="chkDen_Value" name="chkDen_Value" type="hidden" value="false"></span>
+                                                <h4>Den<br><span id="lblDen_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox" id="chkBathroom" role="checkbox" aria-checked="false" tabindex="0" title="Bathroom(s)"><input id="chkBathroom_Value" name="chkBathroom_Value" type="hidden" value="false"></span>
+                                                <h4>Bathroom(s) <span class="Icon_Info tooltip tooltipstered"></span><br><span id="lblBathroom_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Row_4Column FullViewOnly_MarginTop_10">
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox" id="chkCloset" role="checkbox" aria-checked="false" tabindex="0" title="Closet(s)"><input id="lblCloset_Value" name="lblCloset_Value" type="hidden" value="false"></span>
+                                                <h4>Closet(s)<br><span id="lblCloset_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column">
+                                            <div class="CheckboxContainer" id="chkTwoStory_Container">
+                                                <span class="Checkbox" id="chkTwoStory" role="checkbox" aria-checked="false" tabindex="0" title="Two-Story Condo/Loft"><input id="chkTwoStory_Value" name="chkTwoStory_Value" type="hidden" value="false"></span>
+                                                <h4>Two-Story Unit <span class="Icon_Info tooltip tooltipstered"></span><br><span id="lblTwoStory_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                       
+                            
+                            <div id="pnlPanelContainer">
+                                <div data-type="Question" class="Question Hide" id="pnlClosets">
+                                    <h2 class="MarginBottom_0"><span class="h2"> . </span>How many closets need painting?</h2>
+                                    <hr class="hr_1px">
+                                    <div class="ResponseContainer">
+                                        <div id="btnClosets" name="btnClosets" class="ButtonPod" data-selected-index="-1" data-selected-text="" data-selected-value="" tabindex="0">
+                                            <div class="Option" role="radio" aria-checked="false" title="One" data-text="One" data-value="0.00" data-index="0" tabindex="0">
+                                                <div><p class="Text">1 Closet<br><span class="Price" id="btnClosets_option1" name="btnClosets_option1">$50.00</span></p></div>
+                                            </div>
+                                            <div class="Option" role="radio" aria-checked="false" title="Two" data-text="Two" data-value="0.00" data-index="1" tabindex="0">
+                                                <div><p class="Text">2 Closets<br><span class="Price" id="btnClosets_option2" name="btnClosets_option2">$100.00</span></p></div>
+                                            </div>
+                                            <div class="Option" role="radio" aria-checked="false" title="Three" data-text="Three" data-value="0.00" data-index="2" tabindex="0">
+                                                <div><p class="Text">3 Closets<br><span class="Price" id="btnClosets_option3" name="btnClosets_option3">$150.00</span></p></div>
+                                            </div>
+                                            <div class="Option" role="radio" aria-checked="false" title="Four" data-text="Four" data-value="0.00" data-index="3" tabindex="0">
+                                                <div><p class="Text">4 Closets<br><span class="Price" id="btnClosets_option4" name="btnClosets_option4">$200.00</span></p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-type="Question" class="Question Hide" id="pnlAccentWalls">
+                                    <h2 class="MarginBottom_0"><span class="h2"> . </span>How many accent walls need painting?</h2>
+                                    <hr class="hr_1px">
+                                    <div class="ResponseContainer">
+                                        <div id="btnAccentWalls" name="btnAccentWalls" class="ButtonPod" data-selected-index="-1" data-selected-text="" data-selected-value="" tabindex="0">
+                                            <div class="Option" role="radio" aria-checked="false" title="One" data-text="One" data-value="0.00" data-index="0" tabindex="0">
+                                                <div><p class="Text">1 Wall<br><span class="Price" id="btnAccentWalls_option1" name="btnAccentWalls_option1">$99.00</span></p></div>
+                                            </div>
+                                            <div class="Option" role="radio" aria-checked="false" title="Two" data-text="Two" data-value="0.00" data-index="1" tabindex="0">
+                                                <div><p class="Text">2 Walls<br><span class="Price" id="btnAccentWalls_option2" name="btnAccentWalls_option2">$198.00</span></p></div>
+                                            </div>
+                                            <div class="Option" role="radio" aria-checked="false" title="Three" data-text="Three" data-value="0.00" data-index="2" tabindex="0">
+                                                <div><p class="Text">3 Walls<br><span class="Price" id="btnAccentWalls_option3" name="btnAccentWalls_option3">$297.00</span></p></div>
+                                            </div>
+                                            <div class="Option" role="radio" aria-checked="false" title="Four" data-text="Four" data-value="0.00" data-index="3" tabindex="0">
+                                                <div><p class="Text">4 Walls<br><span class="Price" id="btnAccentWalls_option4" name="btnAccentWalls_option4">$396.00</span></p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                            
+                                <div data-type="Question" class="Question Hide" id="pnlBathrooms">
+                                    <h2 class="MarginBottom_0"><span class="h2"> . </span>How many bathrooms need painting?</h2>
+                                    <hr class="hr_1px">
+                                    <div class="ResponseContainer">                            
+                                        <div id="btnBathrooms" name="btnBathrooms" class="ButtonPod" data-selected-index="-1" data-selected-text="" data-selected-value="" tabindex="0">
+                                            <div class="Option" role="radio" aria-checked="false" title="One" data-text="One" data-value="0.00" data-index="0" tabindex="0">
+                                                <div><p class="Text">1 Bathroom<br><span class="Price" id="btnBathrooms_option1" name="btnBathrooms_option1">$199.00</span></p></div>
+                                            </div>
+                                            <div class="Option" role="radio" aria-checked="false" title="Two" data-text="Two" data-value="0.00" data-index="1" tabindex="0">
+                                                <div><p class="Text">2 Bathrooms<br><span class="Price" id="btnBathrooms_option2" name="btnBathrooms_option2">$398.00</span></p></div>
+                                            </div>
+                                            <div class="Option" role="radio" aria-checked="false" title="Three" data-text="Three" data-value="0.00" data-index="2" tabindex="0">
+                                                <div><p class="Text">3 Bathrooms<br><span class="Price" id="btnBathrooms_option3" name="btnBathrooms_option3">$597.00</span></p></div>
+                                            </div>
+                                            <div class="Option" role="radio" aria-checked="false" title="Four" data-text="Four" data-value="0.00" data-index="3" tabindex="0">
+                                                <div><p class="Text">4 Bathrooms<br><span class="Price" id="btnBathrooms_option4" name="btnBathrooms_option4">$796.00</span></p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div data-type="Question" question-num="5" class="Question Hide" id="pnlDoors">
+                                    <h2 class="MarginBottom_0"><span class="h2"> . </span>How many doors need painting?</h2>
+                                    <hr class="hr_1px">
+                                    <div class="ResponseContainer">
+                                        <div id="btnDoors" name="btnDoors" class="ButtonPod" data-selected-index="-1" data-selected-text="" data-selected-value="" tabindex="0">
+                                            <div class="Option" role="radio" aria-checked="false" title="One" data-text="One" data-value="0.00" data-index="0" tabindex="0">
+                                                <div><p class="Text">1 Door &amp; Frame<br><span class="Price" id="btnDoors_option1" name="btnDoors_option1">$75.00</span></p></div>
+                                            </div>
+                                            <div class="Option" role="radio" aria-checked="false" title="Two" data-text="Two" data-value="0.00" data-index="1" tabindex="0">
+                                                <div><p class="Text">2 Doors &amp; Frames<br><span class="Price" id="btnDoors_option2" name="btnDoors_option2">$150.00</span></p></div>
+                                            </div>
+                                            <div class="Option" role="radio" aria-checked="false" title="Three" data-text="Three" data-value="0.00" data-index="2" tabindex="0">
+                                                <div><p class="Text">3 Doors &amp; Frames<br><span class="Price" id="btnDoors_option3" name="btnDoors_option3">$225.00</span></p></div>
+                                            </div>
+                                            <div class="Option" role="radio" aria-checked="false" title="Four" data-text="Four" data-value="0.00" data-index="3" tabindex="0">
+                                                <div><p class="Text">4 Doors &amp; Frames<br><span class="Price" id="btnDoors_option4" name="btnDoors_option4">$300.00</span></p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <h3 class="NoteLabel" style="margin: 10px 0 0 0">NOTE: Price applies to standard doors and frames only. Additional charge may apply for French Doors, Double Doors, Glass Doors or Decorative Doors.</h3> -->
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <!-- SPECIFIC ROOMS QUESTIONS -->
+                        <div data-mode-visibility="rooms" class="Hide">
+                            <div data-type="Question" class="Question Hide" id="pnlHowManyRooms">
+                                <h2 class="MarginBottom_0">2. How many rooms need painting?</h2>
+                                <hr class="hr_1px">
+                                <div class="ResponseContainer">
+                                    <div id="btnNumberOfRooms" name="btnNumberOfRooms" class="ButtonPod MarginBottom_5" data-selected-index="-1" data-selected-text="" data-selected-value="" tabindex="0">
+                                        <div class="Option" id="btnNumberOfRooms_1" name="btnNumberOfRooms_1" role="radio" aria-checked="false" title="1 Room" data-text="1 Room" data-value="0.00" data-index="0" tabindex="0">
+                                            <div><p class="Text">1 Room</p></div>
+                                        </div>
+                                        <div class="Option" id="btnNumberOfRooms_2" name="btnNumberOfRooms_2" role="radio" aria-checked="false" title="2 Rooms" data-text="2 Rooms" data-value="0.00" data-index="1" tabindex="0">
+                                            <div><p class="Text">2 Rooms</p></div>
+                                        </div>
+                                        <div class="Option" id="btnNumberOfRooms_3" name="btnNumberOfRooms_3" role="radio" aria-checked="false" title="3 Rooms" data-text="3 Rooms" data-value="0.00" data-index="2" tabindex="0">
+                                            <div><p class="Text">3 Rooms</p></div>
+                                        </div>
+                                        <div class="Option" id="btnNumberOfRooms_4" name="btnNumberOfRooms_4" role="radio" aria-checked="false" title="4 Rooms" data-text="4 Rooms" data-value="0.00" data-index="3" tabindex="0">
+                                            <div><p class="Text">4 Rooms</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div data-type="Question" class="Question Hide" id="pnlColours_Rooms">
+                                <h2 class="MarginBottom_0"><span class="h2">3. </span>Do you want help picking colours?</h2>
+                                <hr class="hr_1px">
+                                <div class="ResponseContainer">
+                                    <div class="Row">
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox Radio" id="rdoColourConsultation_Yes_Rooms" role="radio" data-value="0.00" aria-checked="false" tabindex="0" title="Colour Consultation"><input id="rdoColourConsultation_Yes_Value" name="rdoColourConsultation_Yes_Rooms_Value" type="hidden" value="false"></span>
+                                                <h4>Yes, I would like a professional colour consultation<span class="Icon_Info tooltip tooltipstered"></span><br><span id="lblColourConsultation_Rooms_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column_2Wide">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox Radio" id="rdoColourConsultation_No_Rooms" role="radio" data-value="0.00" aria-checked="false" tabindex="0" title="No Colour Consultation Needed"><input id="rdoColourConsultation_No_Value" name="rdoColourConsultation_No_Rooms_Value" type="hidden" value="false"></span>
+                                                <h4>No, I will choose colours <span class="Icon_Info tooltip tooltipstered"></span><br><span class="Price">Free</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <h4>NOTE: Colours will be selected during a colour consultation once your order has been confirmed.</h4> -->
+                                </div>
+                            </div>
+                            
+                            <div data-type="Question" class="Question Hide" id="pnlRushJob_Rooms">
+                                <h2 class="MarginBottom_0">4. Do you need it painted on a specific date?</h2>
+                                <hr class="hr_1px">
+                                <div class="ResponseContainer">
+                                    <div class="Row">
+                                        <div class="Column">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox Radio" id="rdoRushJob_No_Rooms" role="radio" aria-checked="false" data-value="0.00" tabindex="0" title="Flexible Schedule Discount"><input id="rdoRushJob_No_Value" name="rdoRushJob_No_Rooms_Value" type="hidden" value="false"></span>
+                                                <h4>No, I'm flexible<span class="Icon_Info tooltip tooltipstered"></span><br><span id="lblRushJob_No_Rooms_Cost" class="Price">[COST]</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="Column_2Wide">
+                                            <div class="CheckboxContainer">
+                                                <span class="Checkbox Radio" id="rdoRushJob_Yes_Rooms" role="radio" aria-checked="false" data-value="0.00" tabindex="0" title="Specific Schedule Required"><input id="rdoRushJob_Yes_Value" name="rdoRushJob_Yes_Rooms_Value" type="hidden" value="false"></span>
+                                                <h4>Yes, I need it painted on/by a specific date<span class="Icon_Info tooltip tooltipstered"></span><br><span class="Price">Free</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 id="lblSpecificRoomsCostMinimum" class="NoteLabel_Big Hide" style="margin-top:10px !important"><span class="Icon_Info" title="Information" alt="Information"></span>Please note there is a $200 minimum for room-based quotes.</h2>
+                    </div>
+
+                    <!-- <hr class="hr_1px MobileViewOnly"> -->
+                    <!-- <div class="Row MarginTop_40 MobileViewOnly" style="margin-bottom:-20px;">
+                        <a href="/contact.php" style="display: flex; align-items: center; justify-content: center;"><img src="images/Icon_Phone.png" style= "height: auto; width: 50px; margin-right: 10px;" > <h5 class="Italic Center">Have something else in mind? Contact us instead!</h5></a>
+                    </div> -->
+                    
+                </div>
+            </div>
+
+            <div class="BodyRow  CalculatorFooter" style="background:rgba(0,0,0,0.3);">
+                <div class="Page">
+                    <div class="Row">
+                        <div class="Column FullViewOnly">
+                            <a href="https://www.paintmycondo.com/contact.php"><img src="calc/Icon_Phone.png" class="Icon_Phone" style="height: auto; width: 50px; margin-right: 10px; float: left;"> <h5 class="Italic">Have something else in mind?<br>Contact us instead!</h5></a>
+                        </div>   
+                    
+                        <div class="Column_2Wide EstimatedTotalContainer">
+                            <div id="pnlPromoCode">
+                                <div class="Row">
+                                    <div class="Column_2Wide">
+                                        <h2 class="Margin_0">Promo Code</h2>
+                                        <!-- <h6>Enter your code</h6> -->
+                                    </div>
+                                    <div class="Column">
+                                        <div class="flex-row">
+                                            <div class="Input_PromoCode"><input type="text" id="txtPromoCode" name="txtPromoCode" title="Promo Code" "=""></div>
+                                            <input id="btnApplyPromoCode" type="button" class="Button_PromoCode" title="Apply" value="Apply" disabled="disabled" style="opacity: 0.6; cursor: default;"> 
+                                        </div>
+                                        <div id="msgInvalidCode" class="ValidationMessage Hide"><p class="Center Margin_0">"CODE" is invalid or expired.</p></div>
+                                        <!-- <p class="FieldDescription Red" style="color:red !important">Invalid Code"</p> -->
+                                    </div>
+                                </div>
+                                <hr class="hr_1px">
+                            </div>
+                            <div class="Row MarginBottom_15">
+                                <div class="Column_2Wide">
+                                    <h2 class="InlineBlock"><img src="calc/AirMiles_Logo.png" title="AIR MILES®" alt="AIR MILES®" class="AirmilesLogo"> AIR MILES® Reward Miles</h2>
+                                    <h6 class="FullViewOnly">Earn 50 Miles for every $500 spent!</h6>
+                                </div>
+                                <div class="Column">
+                                    <h2 id="lblTotalAirmiles" class="MarginTop_5">0 Miles</h2>
+                                </div>
+                            </div>
+                            <div id="pnlDiscount" class="Hide">
+                                <hr class="hr_1px">
+                                <div class="Row">
+                                    <div class="Column_2Wide">
+                                        <h2 class="Margin_0">Discount</h2>
+                                        <h6 id="lblPromoCode"></h6>
+                                    </div>
+                                    <div class="Column">
+                                        <h2 id="lblDiscount" class="Discount">-$0.00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr_1px" id="hrTotalCost">
+                            <div class="TotalCost-Container-Spacer" style="height: 59px;">
+                                <div class="TotalCost-Container TotalCost-Container-Fixed">
+                                    <div class="Page">
+                                        <div class="Row">
+                                            <div class="Column_2Wide">
+                                                <h2 class="Margin_0">Estimated Total</h2>
+                                                <h6><a href="javascript:ShowTerms()" class="h6">Terms &amp; Conditions</a></h6>
+                                            </div>
+                                            <div class="Column">
+                                                <h2 id="lblTotal" class="Total">N/A</h2>
+                                                <h6 style="font-size:11px">+ HST</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="Row">
+                                <div class="Column_2Wide">
+                                    <h2 class="Margin_0">Estimated Total</h2>
+                                    <h6><a href="javascript:ShowTerms()" class="h6">Terms &amp; Conditions</a></h6>
+                                </div>
+                                <div class="Column">
+                                    <h2 id="lblTotal" class="Total">$0.00</h2>
+                                    <h6 style="font-size:11px">+ HST</h6>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    
+                
+                    <hr class="hr_1px MobileViewOnly">
+                    <div class="Row">
+                        <input id="btnSubmitQuote" type="button" class="button float-right MarginTop_40 Hide" value="Request Follow-up">
+                    </div>
+                    <div class="Row MarginTop_40 MobileViewOnly">
+                        <a href="https://www.paintmycondo.com/contact.php" style="display: flex; align-items: center; justify-content: center;"><img src="calc/Icon_Phone.png" style="height: auto; width: 50px; margin-right: 10px;"> <h5 class="Italic Center">Have something else in mind? Contact us instead!</h5></a>
+                    </div>
+                    <!--<div class="Row TermsLinkRow">
+                        <a href="javascript:ShowTerms()"><h6>Click here to see the Terms &amp; Conditions</h6></a>
+                    </div>-->     
+                </div>
+            </div>
+
+            <div id="RoomQuestionTemplateHTML" class="Hide">
+                <div data-type="Room-Question" data-room-number="ROOMNUM" data-room-name="" data-is-complete="false" data-q3-shown="false"  data-q4-shown="false"  data-q5-shown="false" data-total-cost="0" data-completed="false" class="Question">
+                    <h2 class="MarginBottom_0"><span class="h2"> . </span> What do you want to do to <span class="h2" data-id="lblRoomName">Room 1</span>?</h2>
+                    <hr class="hr_1px" />
+                    <div class="ResponseContainer RoomContainer">
+                        <!-- Room Name -->
+                        <div data-type="Question" class="Question">
+                            <h2>1. Name of room</h2>
+                            <hr class="hr_1px" />
+                            <div class="ResponseContainer">
+                                <input id="txtRoomName_Room_ROOMNUM" type="text" value="" placeholder="e.g. Kitchen"/>
+                            </div>
+                        </div>
+                        <!-- Square Footage of Room -->  
+                        <div data-type="Question" class="Question">
+                            <h2>2. What is the approx. square footage of the room?</h2>
+                            <hr class="hr_1px" />
+                            <div class="ResponseContainer">
+                                <div id="sldSize_Room_ROOMNUM"  name="sldSize_Room_ROOMNUM" class="SliderContainer MarginTop_5 MarginBottom_5" data-value="0">
+                                    <div class="flex-row">
+                                        <div class="flex-column PaddingRight_5 Width_100">
+                                            <input type="range" min="0" max="1500" step="5" value="-1"/>
+                                        </div>
+                                        <div class="flex-column PaddingRight_5 PaddingLeft_5">
+                                            <input type="number" min="0" max="1500" step="5" />
+                                        </div>
+                                        <p class="Margin_0">APPROX<br>SQ FT.</p>
+                                    </div>
+                                </div>                                         
+                            </div>
+                        </div>                                                 
+                        <!-- What kind of paint job? -->
+                        <!-- <div data-type="Question" class="Question" id="pnlWhatWouldYouLikeUsToDo" class="Hide"> -->
+                        <div data-type="Question" question-num="3" class="Question Hide">
+                            <h2>3. What kind of paint job does the room need?</h2>
+                            <hr class="hr_1px" />
+                            <div class="ResponseContainer">
+                                <h3 class="NoteLabel">Includes painting all walls in the room/bathroom/closet</h3>
+                                <div class="Row_Column">
+                                    <div class="Column">
+                                        <div class="CheckboxContainer">
+                                            <span class="Checkbox Radio" id="rdoRefresh_Room_ROOMNUM" role="radio" aria-checked="false" tabindex="0" title="Refresh Existing Colours"><input type="hidden" value="false" /></span>
+                                            <h4>Refresh Existing Colours <span class="Icon_Info tooltip" title="Select this option if you plan to paint your walls a similar colour to their current colour. Refresh jobs require only one coat of paint."></span><br /><span data-id="lblRefresh_Cost_ROOMNUM" class="Price">[COST]</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="Column_2Column">
+                                        <div class="CheckboxContainer">
+                                            <span class="Checkbox Radio" id="rdoColourChange_Room_ROOMNUM" role="radio" aria-checked="false" tabindex="0" title="Colour Change"><input type="hidden" value="false" /></span>
+                                            <h4>Colour Change <span class="Icon_Info tooltip" title="Select this option if you are going from a light colour to a dark colour or vice-versa."></span><br /><span data-id="lblColourChange_Cost_ROOMNUM" class="Price">[COST]</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Other Options? -->
+                        <!-- <div data-type="Question" class="Question" data-optional="true" id="pnlWhatNeedsPainting" class="Hide"> -->
+                        <div data-type="Question" question-num="4" class="Question Hide" data-optional="true">
+                            <h2>4. What else would you like us to paint?</h2>
+                            <hr class="hr_1px" />
+                            <div class="ResponseContainer">
+                                <h3 class="NoteLabel">Select all that apply</h3>
+                                <div class="Row_4Column">
+                                    <div class="Column">
+                                        <div class="CheckboxContainer">
+                                            <span class="Checkbox" id="chkBaseboards_Room_ROOMNUM" role="checkbox" aria-checked="false" tabindex="0" title="Baseboards"><input  type="hidden" value="false" /></span>
+                                            <h4>Baseboards<br /><span id="lblBaseboards_Cost_ROOMNUM" class="Price">[COST]</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="Column">
+                                        <div class="CheckboxContainer">
+                                            <span class="Checkbox" id="chkDoorsTrim_Room_ROOMNUM" role="checkbox" aria-checked="false" tabindex="0" title="Doors & Frames"><input type="hidden" value="false" /></span>
+                                            <h4>Doors &amp; Frames <span class="Icon_Info tooltip" title="Price applies to standard doors and frames only. Additional charge may apply for French Doors, Double Doors, Glass Doors or Decorative Doors."></span><br /><span id="lblDoorsTrim_Cost_ROOMNUM" class="Price">[COST]</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="Column">
+                                        <div class="CheckboxContainer">
+                                            <span class="Checkbox" id="chkCeiling_Room_ROOMNUM" role="checkbox" aria-checked="false" tabindex="0" title="Ceiling"><input type="hidden" value="false" /></span>
+                                            <h4>Ceiling<br /><span id="lblCeiling_Cost_ROOMNUM" class="Price">[COST]</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="Column">
+                                        <div class="CheckboxContainer">
+                                            <span class="Checkbox" id="chk10FootCeiling_Room_ROOMNUM" role="checkbox" aria-checked="false" tabindex="0" title="10'+ High Walls/Ceilings"><input type="hidden" value="false" /></span>
+                                            <h4>10'+ High Walls/Ceilings <span class="Icon_Info tooltip" title="Select this option if your condo or room features a 10 foot or heigher ceilings."></span><br /><span id="lbl10FootCeiling_Cost_ROOMNUM" class="Price">[COST]</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Row_4Column FullViewOnly_MarginTop_10">
+                                    <div class="Column">
+                                        <div class="CheckboxContainer">
+                                            <span class="Checkbox" id="chkCrownMolding_Room_ROOMNUM" role="checkbox" aria-checked="false" tabindex="0" title="Crown Molding"><input type="hidden" value="false" /></span>
+                                            <h4>Crown Molding<br /><span id="lblCrownMolding_Cost_ROOMNUM" class="Price">[COST]</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="Column">
+                                        <div class="CheckboxContainer">
+                                            <span class="Checkbox" id="chkAccentWall_Room_ROOMNUM" role="checkbox" aria-checked="false" tabindex="0" title="Accent Wall(s)"><input type="hidden" value="false" /></span>
+                                            <h4>Accent Wall<br /><span id="lblAccentWall_Cost_ROOMNUM" class="Price">[COST]</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="Column">
+                                        <div class="CheckboxContainer">
+                                            <span class="Checkbox" id="chkCloset_Room_ROOMNUM" role="checkbox" aria-checked="false" tabindex="0" title="Closet"><input type="hidden" value="false" /></span>
+                                            <h4>Closet<br /><span id="lblCloset_Cost_ROOMNUM" class="Price">[COST]</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-type="Question" question-num="5" class="Question Hide">
+                            <h2>5. How many doors need painting?</h2>
+                            <hr class="hr_1px" />
+                            <div class="ResponseContainer">
+                                <div id="btnDoors_Room_ROOMNUM" name="btnDoors_Room_ROOMNUM" class="ButtonPod" data-selected-index="-1" data-selected-text=""  data-selected-value="" tabindex="0">
+                                    <div class="Option" role="radio" aria-checked="false" title="One" data-text="One" data-value="0.00" data-index="0" tabindex="0">
+                                        <div><p class="Text">1 Door &amp; Frame<br/><span class="Price" id="btnDoors_option1_ROOMNUM" name="btnDoors_option1_ROOMNUM"></span></p></div>
+                                    </div>
+                                    <div class="Option" role="radio" aria-checked="false" title="Two" data-text="Two" data-value="0.00" data-index="1" tabindex="0">
+                                        <div><p class="Text">2 Doors &amp; Frames<br/><span class="Price" id="btnDoors_option2_ROOMNUM" name="btnDoors_option2_ROOMNUM"></span></p></div>
+                                    </div>
+                                    <div class="Option" role="radio" aria-checked="false" title="Three"  data-text="Three" data-value="0.00" data-index="2" tabindex="0">
+                                        <div><p class="Text">3 Doors &amp; Frames<br/><span class="Price" id="btnDoors_option3_ROOMNUM" name="btnDoors_option3_ROOMNUM"></span></p></div>
+                                    </div>
+                                    <div class="Option" role="radio" aria-checked="false" title="Four" data-text="Four" data-value="0.00" data-index="3" tabindex="0">
+                                        <div><p class="Text">4 Doors &amp; Frame<br/><span class="Price" id="btnDoors_option4_ROOMNUM" name="btnDoors_option4_ROOMNUM"></span></p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <h3 class="NoteLabel" style="margin: 10px 0 0 0">NOTE: Price applies to standard doors and frames only. Additional charge may apply for French Doors, Double Doors, Glass Doors or Decorative Doors.</h3> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+        </div>
+
+        <!-- <div class="BodyRow Background_FAQ">
+            <div class="Page">
+                <h1>Some Frequently Asked Questions</h1>
+                    <ul class="faq-list MarginTop_40">
+                            <li id="q1">
+                                <h1><span class="letter MarginTop_0">Q.</span><span>How long does it typically take to paint my condo?</span></h1>
+                                <p><span class="letter">A.</span><span>One day for a “Refresh” and two days for a “Colour Change”.</span></p>
+                            </li>
+                            <li id="q2">
+                                <h1><span class="letter">Q.</span><span>What kind of paint do you use?</span></h1>
+                                <p><span class="letter">A.</span><span>We use the top grades of paint from every manufacturer, whether it be Dulux, Sherwin-Williams or Benjamin Moore. </span></p>
+                            </li>
+                            <li id="q3">
+                                <h1><span class="letter">Q.</span><span>Do you offer a warranty?</span></h1>
+                                <p><span class="letter">A.</span><span>Yes, all of our condo painting projects come with an industry leading 3 year warranty!</span></p>
+                            </li>
+                        </ul>
+                        <a href="faq" class="button MarginTop_20">See More FAQ</a>                 
+            </div>
+        </div>
+        <div class="BodyRow Background_Contact" id="Contact">
+            <div class="Page">                
+                <h1>What Our Clients are Saying <span class="MarginBottom_20 Block"><span class="Icon_Info MarginLeft_0" title="Information" alt="Information"></span> HOVER OVER TESTIMONIAL TO PAUSE</span></h1>
+
+
+<div class="testimonials SlidingList">
+    <div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh3.googleusercontent.com/a-/AOh14Gj-VoCzkxNUm9H1Tk01BF0qrvtd1rifZMMNTPSIrg=s100-c0x00000000-cc-rp" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Alexandra Birukova</b> • April 9, 2021</h3>
+                    </div>                   
+                </div>
+                <div class="review-cap"></div><div class="review">
+                    <h1>Working with Paint My Condo has been incredible - from start to finish, my interaction with Dan with easy, fast and so transparent. Love the quick turnaround! If you need your condo painted and you want to work with an awesome small business, call these guys!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh6.googleusercontent.com/-VE3ErZKlxYE/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckxCVK3wChgXh6BMUysmuyFSIHvQQ/s100-c0x00000000-cc-rp/photo.jpg" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Olga Taratuta</b> • April 8, 2021</h3>
+                        <h3><b>Positive:</b> Professionalism, Value</h3> 
+                    </div>                   
+                </div>
+                <div class="review-cap"></div><div class="review">
+                    <h1>Ugur did a fantastic job with our newly purchased condo. He got all the work done in only 3 days, including the painting of 3 rooms, 2 bathrooms and some wall repair! We are very pleased with the final look of our condo.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh3.googleusercontent.com/-voqr3z4w2oU/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckYwi1aEXLKMcdnmw2SdM6C8ZyJyw/s100-c0x00000000-cc-rp/photo.jpg" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Carol Ye</b> • April 5, 2021</h3>
+                    </div>                   
+                </div>
+                <div class="review-cap"></div><div class="review">
+                    <h1>Wonderful experience with PaintMyCondo!</h1>
+                    <h1>Dan was very responsive (even responded outside of what I considered normal business hours quite a few times), friendly, and knowledgeable!  He patiently answered all of our questions and we were very happy that he gently steered us away from a sheen that would’ve been too shiny for our liking.  His recommendation was spot on!</h1>
+                    <h1>We had Marcio as our painter and he did a great job!  He not only did everything we’ve asked for, but he was also kind enough to put in extra hours to accommodate our last-minute additional work request.  He even managed to squeeze into our tiny closets AND paint the wall behind our washer and dryer (didn’t expect this because it was very difficult to reach and we weren’t there to monitor him, so he did this out of his professionalism).  Talk about attention to detail and dedication!</h1>
+                    <h1>With their reasonable pricing and excellent service, I have already booked them for our next project - the ceilings!</h1>
+                    <h1>Thank you, Dan and Marcio!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh3.googleusercontent.com/a-/AOh14GgwnlLIlwUpnPJlHq853gAHbIZB1rP0Mbb1_MASOQ=s100-c0x00000000-cc-rp" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Kien Tran</b> • April 1, 2021</h3>
+                        <h3><b>Positive:</b> Professionalism, Quality, Responsiveness</h3> 
+                    </div>                   
+                </div>
+                <div class="review-cap"></div><div class="review">
+                    <h1>Highly recommend paintmycondo! Had them paint a small room (100sqft) and Daniel was quick and responsive with getting that setup.</h1>
+                    <h1>Ugur, the painter, also did a fantastic job on the room!</h1>
+                    <h1>Would definitely use them again.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh6.googleusercontent.com/-Udd0m_W770g/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucly3RoR1ooFlzvllzax1Vj6aSIk7A/s100-c0x00000000-cc-rp/photo.jpg" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Kim Vu</b> • April 1, 2021</h3>
+                        <h3><b>Positive:</b> Quality</h3> 
+                    </div>                   
+                </div>
+                <div class="review-cap"></div><div class="review">
+                    <h1>Highly satisfied with Ugur's reliable and quality work (paint & caulking). The finishing and timely completion is impressive! You wont be disappointed if you get Ugur, do ask for him (i know i will for next job)! Exceeded expectations..</h1>
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh3.googleusercontent.com/a-/AOh14Gh-JwlgFUMIpCnfKK3odl4USZ09DYe3bHr1uvGHPQ=s100-c0x00000000-cc-rp" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Trav Vo</b> • March 30, 2021</h3>
+                        <h3><b>Positive:</b> Professionalism, Quality</h3> 
+                    </div>                   
+                </div>
+                <div class="review-cap"></div><div class="review">
+                    <h1>Im very happy with painting of my Condo downtown. Ugur came on time and with very little instruction was able to tackle majority of issues and wall prep without even being told he saw the issues, he has experience with steady hand when rolling and brushing on edges to not make a major mess to clean up and he made sure to keep everything clean, neat and organized. I would like Ugur to come back and paint my exterior front door. I also left Dans phone number at the house we sold in Pickering incase new buyers need some rooms painted.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh6.googleusercontent.com/-Guc4eUHc5fA/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmAEi-sfTcAnLLFXNkgfCetzbzGrg/s100-c0x00000000-cc-rp/photo.jpg" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Adrian Canagasuriam</b> • March 28, 2021</h3>
+                        <h3><b>Positive:</b> Professionalism, Punctuality, Quality, Responsiveness, Value</h3> 
+                    </div>                   
+                </div>
+                <div class="review-cap"></div><div class="review">
+                    <h1>Ugur did a fantastic job!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh3.googleusercontent.com/a-/AOh14Gj2etNJxJrAwKXOxF97VTZIJnwG6PZROj_LZ77DuQ=s100-c0x00000000-cc-rp" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Imaad Khatri</b> • March 27, 2021</h3>
+                        <h3><b>Positive:</b> Professionalism, Punctuality, Quality, Responsiveness, Value</h3> 
+                    </div>                   
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh3.googleusercontent.com/-N9OEfn-yEzI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucly2QLxg3JZ-2zNfrW9tTQ9nVWpQA/s100-c0x00000000-cc-rp-ba2/photo.jpg" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Jose Ignacio Traboulsi</b> • March 26, 2021</h3>
+                        <h3><b>Positive:</b> Professionalism, Punctuality, Quality, Responsiveness, Value</h3> 
+                    </div>                   
+                </div>
+                <div class="review-cap"></div><div class="review">
+                    <h1>Ugur was great! He did an awesome job at my place. He was on time and always took the time to explain what he was doing and how he would do it. Great painting skills!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh3.googleusercontent.com/a-/AOh14Gi-mTuMKOZqKlkP6-6j2gqpEmJLYaLB3mot1Dnz=s100-c0x00000000-cc-rp" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Demetra Mandrapilias</b> • March 24, 2021</h3>
+                        <h3><b>Positive:</b> Professionalism, Punctuality, Quality, Responsiveness</h3> 
+                    </div>                   
+                </div>
+                <div class="review-cap"></div><div class="review">
+                    <h1>Great company. The painters did an amazing job and Daniel was very responsive, quick, and easy to communicate with.  Highly recommend.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh3.googleusercontent.com/a-/AOh14GhL-LEWrFrWq4ZVJZYbQEstP_QYSxr8u-EqjW682w=s100-c0x00000000-cc-rp" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Raquel Howard</b> • March 20, 2021</h3>
+                    </div>                   
+                </div>
+                <div class="review-cap"></div><div class="review">
+                    <h1>Due to covid, we had to make all the arrangements via phone and email.  Daniel was amazing!  He was responsive to our questions, professional and friendly.  They painted our condo walls, baseboards, doors, frames and kitchen cabinets within the timeframe they gave and did a great job at a reasonable price!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh4.googleusercontent.com/-v0o8S8GrD0M/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckoph-YmQdTYHy5SSbNgbEnUsJwiA/s100-c0x00000000-cc-rp/photo.jpg" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Harbinder Atwal</b> • March 16, 2021</h3>
+                        <h3><b>Positive:</b> Professionalism, Punctuality, Quality, Responsiveness, Value</h3> 
+                    </div>                   
+                </div>
+                <div class="review-cap"></div><div class="review">
+                    <h1>Really great experience, they were on time, knowledgeable and fast!</h1>
+                    <h1>I would recommend Daniel and his team for any condo painting project.</h1>
+                    <h1>I got quite a few estimates before deciding on paint my condo. The reasons I chose paint my condo is:</h1>
+                    <h1>
+                        <ul>
+                            <li>transparency of costs so no surprises.</li>
+                            <li>Daniels professionalism and promptness to any queries I had.</li>
+                            <li>after reading reviews I specifically requested Ugur which Daniel accommodated even though he had to switch the schedule around due to my tenants availability.</li>
+                        </ul>
+                   </h1>
+                   <h1>All in all I have had a very stress free experience and I will definitely be using paint my condo again for future painting projects!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh3.googleusercontent.com/a-/AOh14Ght5iCpx7l9rrlMGD-Rva7QJiidI7Yq1RSilwXKwQ=s100-c0x00000000-cc-rp" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Tan Kwan</b> • March 15, 2021</h3>
+                        <h3><b>Positive:</b> Professionalism, Punctuality, Quality, Responsiveness, Value</h3> 
+                    </div>                   
+                </div>
+                <div class="review-cap"></div><div class="review">
+                    <h1>Very positive experience and very accommodating! Responses are quick. Painting job was excellent and thorough. Will use them again.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh4.googleusercontent.com/-71nWqQDNQ3M/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclBPPz8lplw0xLXRxOzdvaBgY4xvg/s100-c0x00000000-cc-rp/photo.jpg" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Talia Shapiro</b> • March 14, 2021</h3>
+                        <h3><b>Positive:</b> Professionalism, Punctuality, Quality, Responsiveness, Value</h3> 
+                    </div>                   
+                </div> 
+            </div>
+        </div>
+        <div class="Step testimonial">
+            <div class="Page">
+                <div class="reviewer-info">
+                    <div><span class="image"><img src="https://lh3.googleusercontent.com/-O7baYjKUQmA/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucn1AIx5tRyY_2B8ZzEnOan-g18-8g/s100-c0x00000000-cc-rp/photo.jpg" alt="" title=""/></span></div>
+                    <div>
+                        <span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span><span class="review-star"></span>
+                        <h3><b>Deborah McKeown</b> • March 1, 2021</h3>
+                        <h3><b>Positive:</b> Professionalism, Punctuality, Quality, Responsiveness, Value</h3>
+                    </div>                    
+                </div>          
+                <div class="review-cap"></div><div class="review">
+                    <h1>Ugur was very professional and responsive to my requirements. He used his experience to offer recommendations to ensure my satisfaction.</h1>
+                    <h1>I am extremely satisfied with the 'PaintMyCondo' experience and would recommend them for future painting services.</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="Row">
+    <a class="button MarginTop_10 MarginBottom_0 FloatRight" href="https://www.google.ca/search?_ga=2.66117931.462261882.1604001116-885646595.1603154166&q=PaintMyCondo.com&ludocid=17183827143307784681&lsig=AB86z5W2tUF973bHNP0cf7uGr8pI#lrd=0x882b34e060843577:0xee7937be369371e9,1,,," target="_blank">See More Google Reviews</a>
+</div>            </div>
+        </div>
+
+        <div class="BodyRow">
+            <div class="Page">
+                <h1>The PaintMyCondo.com Advantage</h1>
+<p>We use only cutting edge practices and techniques, high quality paints, and provide an industry leading <b>3 year warranty</b> on every condo painting project. Your space is important, you deserve the best!</p>
+<div class="Row_2Column">
+    <div class="Column">
+        <ul class="Checklist">
+            <li><h3><img src="images/Icon_Checkmark.png" alt="Checkmark"/>Dropsheets to be used in all project areas</h3></li>
+            <li><h3><img src="images/Icon_Checkmark.png" alt="Checkmark"/>Daily site clean-up</h3></li>
+            <li><h3><img src="images/Icon_Checkmark.png" alt="Checkmark"/>Proper storage of tools and materials on job-site at the end of each day</h3></li>
+            <li><h3><img src="images/Icon_Checkmark.png" alt="Checkmark"/>Full job-site clean-up upon completion of project</h3></li>
+        </ul>
+    </div>
+    <div class="Column">
+        <ul class="Checklist">
+            <li><h3><img src="images/Icon_Checkmark.png" alt="Checkmark"/>Commercial liability insurance up to $5,000,000, and bonded</h3></li>
+            <li><h3><img src="images/Icon_Checkmark.png" alt="Checkmark"/>WSIB compliant: clearance certificate available upon request</h3></li>
+            <li><h3><img src="images/Icon_Checkmark.png" alt="Checkmark"/>Experienced PROFESSIONAL painters with WHMIS and 'Working at Heights' training</h3></li>
+            <li><h3><img src="images/Icon_Checkmark.png" alt="Checkmark"/>Every condo painting project comes with a 3 year warranty</h3></li>
+        </ul>
+    </div>
+</div>            </div>
+        </div> -->
+    </div>
+
+    <a href="javacript:void();" class="back-to-top" title="Scroll to Top" style="display: none;">TOP</a>
+
+   <!-- ********** POPUP ********* -->
+    <a href="#Popup" id="PopupTrigger" class="Hide"></a>
+    <div class="Hide">
+        <div class="PopUp" id="Popup">
+            <div class="PopUp_Heading"><h2 id="Popup_lblCaption" class="Left"></h2><div class="PopUp_Close" onclick="$.fancybox.close();"><span>X</span></div></div>
+            <div class="PopUp_Body">
+                <h5 id="Popup_lblMessage"></h5>
+                <input type="button" class="button" value="Close" title="Close" onclick="$.fancybox.close();" />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    function Popup_Init(title, message) {
+        window.$("#Popup #Popup_lblCaption").html(title);
+        window.$("#Popup #Popup_lblMessage").html(message);
+    }
+    </script>
+
+    <!-- ********** POPUP FORM ********* -->
+    <a href="#Popup_Form" id="Popup_FormTrigger" class="Hide"></a>
+    <div class="Hide">
+        <div class="PopUp" id="Popup_Form">
+            <div class="PopUp_Heading"><h2 id="Popup_Form_lblCaption" class="Left">Your Contact Information</h2><div class="PopUp_Close" onclick="$.fancybox.close();"><span>X</span></div></div>
+            <div class="ValidationMessage Hide" id="msgFailure"><p></p></div>
+            <div class="PopUp_Body">
+                <form class="Form" action="emailsender.php" method="post" onsubmit="return AIM.submit(this,{ 'onStart': Popup_Form_Validate})">
+                    <input id="hdnRoomSize" name="hdnRoomSize" type="hidden"/>
+                    <input id="hdnOptionsTable" name="hdnOptionsTable" type="hidden"/>
+                    <input id="hdnDiscountAmount" name="hdnDiscountAmount" type="hidden"/>
+                    <input id="hdnDiscountCode" name="hdnDiscountCode" type="hidden"/>
+                    <input id="hdnTotalCost" name="hdnTotalCost" type="hidden"/>
+                    <input id="hdnAirmilesEarned" name="hdnAirmilesEarned" type="hidden"/>
+                    <div class="Row text-left">
+                        <div class="Label"><h4>Name*</h4></div>
+                        <div class="Field"><div class="Input"><input type="text" id="txtName" name="txtName" title="Name" /></div></div>
+                    </div>
+                    <div class="Row text-left">
+                        <div class="Label"><h4>Email*</h4></div>
+                        <div class="Field"><div class="Input"><input type="email" id="txtEmail" name="txtEmail" title="Email Address" data-validation="Email" /></div></div>
+                    </div>
+                    <div class="Row text-left">
+                        <div class="Label"><h4 class="Margin_0">Telephone*</h4><!--<p class="FieldDescription MarginTop_0">(Optional)</p>--></div>
+                        <div class="Field"><div class="Input"><input type="text" id="txtTelephone" name="txtTelephone" title="Telephone Number" data-validation="Phone" /></div></div>
+                    </div>
+                    <div class="Row text-left">
+                        <div class="Label"><h4>How did you hear about us?</h4></div>
+                        <div class="Field">
+                            <!-- <span class="Checkbox Radio" id="rdoRushJob_No" role="radio" aria-checked="false" tabindex="0" title="Flexible Schedule Discount"> -->
+                            <div class="MarginBottom_5"><input class="MarginRight_5" type="radio" id="rdo_ref_search" name="rdo_ref" title="Search Engine"  value="Search Engine"  />Search Engine</div>
+                            <div class="MarginBottom_5"><input class="MarginRight_5"type="radio" id="rdo_ref_vehicle" name="rdo_ref" title="Vehicle Signage"  value="Vehicle Signage"  />Vehicle Signage</div>
+                            <div class="MarginBottom_5"><input class="MarginRight_5" type="radio" id="rdo_ref_ad" name="rdo_ref" title="Advertisement" value="Advertisement"  />Advertisement</div>
+                            <div class="MarginBottom_5"><input class="MarginRight_5" type="radio" id="rdo_ref_referral" name="rdo_ref" title="Referral" value="Referral"  />Referral</div>
+                            <div class="MarginBottom_5"><input class="MarginRight_5" type="radio" id="rdo_ref_customer" name="rdo_ref" title="Returning Customer" value="Returning Customer"  />Returning Customer</div>
+                            <div class="MarginBottom_5"><input class="MarginRight_5" type="radio" id="rdo_ref_other" name="rdo_ref" title="Other" value="Other"  />Other</div>
+                        </div>
+                    </div> 
+
+                    <h5 class="MarginTop_20 MarginBottom_20 Italic">Your information is used only for the purposes of contacting you about this estimate and will not be sold or shared.</h5>
+                    <input id="cmdSubmitFollowupForm" type="submit" class="button" value="Submit" title="Submit" />                  
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    function Popup_Form_Init(title, message) {
+        window.$("#Popup_Form #Popup_Form_lblCaption").html(title);
+        window.$("#Popup_Form #Popup_Form_lblMessage").html(message);
+        window.$("#Popup_Form #txtName").focus();
+    }
+    function Popup_Form_Validate() {
+        var isValid = true;
+        if (!validateField("txtName")) { isValid = false; }
+        if (!validateField("txtEmail")) { isValid = false; }
+        if (!validateField("txtTelephone")) { isValid = false; }
+
+        if (!isValid) { scrollToValidationMessage(); }
+        else 
+        {
+            $("#cmdSubmitFollowupForm").disable("Submitting...");
+            StoreCalculatorData();            
+        }
+        return isValid;
+    }
+    function Popup_Form_Successful(){
+        $("#cmdSubmitFollowupForm").enable();
+        DisplayPopupMsg("Thank you!", "Your free quote has been submitted successfully and is now pending review!</p><p>You should recieve a confirmation email within 5-10 minutes.<br/>If you do not see it, please check your Junk/Spam folder.");
+    }
+    function Popup_Form_Failed(){
+        $("#cmdSubmitFollowupForm").enable();
+        ShowFailureMessage("Sorry, your request could not be processed at this time. Please try again.", 5000);
+    }
+    </script>
+
+    <!-- ********** TERMS & CONDITIONS POPUP ********* -->
+    <a href="https://www.paintmycondo.com/price#Popup_Terms" id="Popup_TermsTrigger" class="Hide"></a>
+    <div class="Hide">
+        <div class="PopUp" id="Popup_Terms">
+            <div class="PopUp_Heading"><h2 class="Left">Terms &amp; Conditions</h2><div class="PopUp_Close" onclick="$.fancybox.close();"><span>X</span></div></div>
+            <div class="PopUp_Body">
+                <div class="Iframe">
+                    <h3 class="MarginTop_0">Parking</h3>
+                    <p>Parking accommodations to be provided by the owner at no cost. Maximum two parking spaces required unless alternative arrangements are made between owner and Paint Your Condo to have more painters on-site. The owner agrees to pay for any additional parking fees incurred during the project. This does not include parking tickets.</p>
+
+                    <h3>Costs for Painting Whole Condos</h3>
+                    <ul>
+                        <li>
+                            <h4>One (1) Bedroom Condos:</h4>
+                            <p>Assumes floor area of condo is equal to or less than 750 square feet. Price to be renegotiated if larger than 750 square feet.</p>
+                        </li>
+                        <li>
+                            <h4>Two (2) Bedroom Condos:</h4>
+                            <p>Assumes floor area of condo is equal to or less than 1000 square feet. Price to be renegotiated if larger than 1000 square feet.</p>
+                        </li>
+                        <li>
+                            <h4>Three (3) Bedroom Condos:</h4>
+                            <p>Assumes floor area of condo is equal to or less than 1250 square feet. Price to be renegotiated if larger than 1250 square feet.</p>
+                        </li>
+                    </ul>
+
+                    <h3>Colours</h3>
+                    <p>Ceilings to receive pure white flat paint. Baseboards, door slabs &amp; frames, window casings and any other trim to receive pure white semi-gloss paint. Prices to be renegotiated if alternative colours for these project areas are requested.</p>
+
+                    <h3>Colour Schedule</h3>
+                    <p>Customer to fill out and submit provided colour schedule form minimum of three business days prior to project start date.</p>
+
+                    <h3>Paint Brand</h3>
+                    <p>Paint to be of the Dulux brand exclusively.</p>
+
+                    <h3>Content Manipulation</h3>
+                    <p>Quote assumes project areas will be ready for painting; furniture removed from room or pushed to centre of room leaving minimum four feet (4') of workspace around walls.</p>
+
+                    <h3>Condo Access</h3>
+                    <p>Customer to provide access to condo between hours of 8 a.m. and 5 p.m.</p>
+
+                    <h3>Cleaning &amp; Access to Water</h3>
+                    <p>Customer must provide access to a sink and water for cleaning tools and brushes. Access to a stainless-steel sink preferred.</p>
+
+                    <h3>Recycling &amp; Garbage</h3>
+                    <p>Empty paint cans and any other recyclable materials to be recycled properly at owner's condo. All garbage created by painting work to be disposed down condo garbage chutes.</p>
+
+                    <h3>Payment</h3>
+                    <p>Customer to pay by credit card (preferred) or by cheque (made out to The Painting Hub) immediately upon project completion. Painters on-site will arrange for payment.</p>
+                </div>
+                <input type="button" class="Button" value="Close" title="Close" onclick="$.fancybox.close();">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+             InitCalculator();             
+        });
+
+    </script>
+
+</body>
+</html>
